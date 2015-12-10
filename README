@@ -1,0 +1,5 @@
+This is bashrc and environment settings from ecsca.
+You can install just run install.sh
+
+Installing this bashrc will remove existing bashrc, bash_aliases, bash_paths
+in home directory, so I recommend you to backup those files.

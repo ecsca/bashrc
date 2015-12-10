@@ -1,0 +1,4 @@
+if [ -d "$HOME/pbin" ] ; then
+  PATH="$HOME/pbin:$PATH"
+fi
+

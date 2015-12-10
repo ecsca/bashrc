@@ -38,7 +38,7 @@ fi
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\e[0;36m\]\u:\[\033[32m\]\w\[\033[31m\]\$(parse_git_branch)\[\e[0;34m\][\t]\[\033[00m\] \$ "
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
